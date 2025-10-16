@@ -1,0 +1,756 @@
+# questions.toml
+
+
+#Liste des Chapitres
+# 0-1-Trigonométrie
+# 0-2-Dérivée
+# 0-3-
+
+# 1-Logique Fait 
+# 2-Les ensembles En cours
+# 3-Les fonctions Pas Fait
+# 4-Denombrement Fait
+# 5-Espaces_probabilises Fait
+# 6-Probabilites_conditionnelles Fait
+# 7-Variables Aléatoires En cours
+# 8-Divisions Euclidienne et PGCD Pas fait 
+# 9-Congruence  fait
+# 10-Nombres complex Pas fait
+
+
+[1-Logique]
+label = "1-Logique"
+
+[[1-Logique.questions]]
+question = """L'assertion «  ∃x∈R:(x(x−1)<0) » est """
+answers = ["Vrai"]
+alternatives = ["Faux"]
+
+[[1-Logique.questions]]
+question = """Quels assertions sont vraie(s) ?"""
+answers = ["«  (1+1=2) ou  (3>2) »"]
+alternatives = ["« Les roses ne sont ni des fleurs,  ni des  moustiques»", 
+"« Madrid  est en Espagne  et  Paris est en France »"]
+
+[[1-Logique.questions]]
+question = """Soient  f une fonction de  R dans  R et  P l’assertion suivante : «  f est une fonction positive ».
+La négation  de l’assertion  P  est (cocher la bonne réponse)"""
+answers = ["f n'est pas une fonction positive."]
+alternatives = ["f n'est pas une fonction.", 
+"f est une fonction ni positive, ni négative.",
+"f est une fonction négative."]
+
+[[1-Logique.questions]]
+question = """Soient les deux assertions suivantes :  
+P = « J'ai mon permis de conduire  »   
+Q = « J'ai plus de 18 ans ».
+Cocher la (les) assertion(s) vraie(s)"""
+answers = ["L'assertion  P implique l'assertion Q."]
+alternatives = ["Les deux assertions sont équivalentes.", 
+"L'assertion  Q implique l'assertion  P."]
+
+[[1-Logique.questions]]
+question = """Soient  I un intervalle de  R et  f:I→R  une fonction définie sur  I à valeurs réelles.
+L'assertion «  ∃λ∈R,  ∀x∈I, f(x)=λ »  s'exprime verbalement par"""
+answers = ["Il existe un réel  λ tel que pour tout réel  x,  l'image de  x par  f est égale à λ"]
+alternatives = ["Pour tout réel  x, il existe un réel  λ tel que l'image de  x par  f est égale à λ"]
+
+[[1-Logique.questions]]
+question = """L'assertion  « Pour tout réel  x, il existe un entier naturel supérieur à x » 
+s'exprime, en utilisant un langage formalisé sous la forme"""
+answers = [" ∀x∈R , ∃n∈N : n≥x"]
+alternatives = ["∃ n ∈ N : ∀ x ∈ R ,n≥0","∀x∈R , ∃n∈N : n>0" ]
+
+[[1-Logique.questions]]
+question = """Cocher la (les) assertion (s) vraie (s)"""
+answers = ["(3<4) et ( 2 divise  6) ", "(3<4) et non ( 2 divise  5)" ]
+alternatives = ["non(3<4) ou ( 2 divise  5)","(3<4) et ( 2 divise  5)" ]
+
+[[1-Logique.questions]]
+question = """Cocher la (les) assertion (s) vraie (s)"""
+answers = ["Si Napoléon était chinois, alors  5−1=2", "Soit les roses sont des mouches, soit les chats ont 4  pattes" ]
+alternatives = ["Soit Céline était chinois, soit les chats aboient" ]
+
+[[1-Logique.questions]]
+question = """L'assertion «Il existe un unique x∈R:(x(x−1)<0) » est
+Question Veuillez choisir une réponse."""
+answers = ["Faux" ]
+alternatives = ["Vrai"]
+
+[[1-Logique.questions]]
+question = """L'assertion «Il existe un unique ∃x∈R:sin(x)=x » est
+Question Veuillez choisir une réponse."""
+answers = ["Vrai" ]
+alternatives = ["Faux"]
+
+[[1-Logique.questions]]
+question = """Soient  f une fonction de  R dans R et P l'assertion  «  ∀x∈R, f(x)≠0 »
+La négation de  P est (cocher la bonne réponse)"""
+answers = ["∃x∈R, f(x)=0" ]
+alternatives = ["∃x∈R, f(x)>0", "∃x∈R, f(x)≠0", "∀x∈R, f(x)=0"]
+
+[[1-Logique.questions]]
+question = """Soit l'assertion « toutes les boules contenues dans l'urne sont vertes »
+La négation de cette assertion est (cocher la bonne réponse)"""
+answers = ["Il existe une boule qui n'est pas verte dans l'urne" ]
+alternatives = ["Il existe plusieurs boules non vertes dans l'urne", "Toutes les boules contenues dans l'urne ne sont pas vertes"]
+
+[[1-Logique.questions]]
+question = """Soit l'assertion «Si un nombre entier est divisible par  4, alors il se termine par  4»
+La négation de cette assertion est (cocher la bonne réponse)"""
+answers = ["Un nombre entier est divisible par  4 et il ne se termine pas par  4" ]
+alternatives = ["Si un nombre entier est divisible par  4, alors il est  un nombre entier",
+ "Si un nombre entier est divisible par  4, alors il n'est pas un nombre entier"]
+
+
+#_______________________________________________________________________________________________________________________________
+
+[2-Les_ensembles]
+label = "2-Les ensembles"
+
+[[2-Les_ensembles.questions]]
+question = """Cocher la (les) bonne (s) réponse (s) """
+answers = ["√2 ∈ R"]
+alternatives = ["{√2} ⊂ R", "√2 ⊂ R"]
+
+[[2-Les_ensembles.questions]]
+question = """Soient  A={0,1,2} et  B={1,2} """
+answers = ["A ∩ B = {1,2}", "A ∪ B = {0,1,2}"]
+alternatives = ["A ∪ B = {0,1,2,3}", "A ∩ B = {0,1}"]
+
+[[2-Les_ensembles.questions]]
+question = """Soient E={0,1,2,3} et F={1,2}. 
+Le complémentaire de F dans E (∁E(F)) est l’ensemble """
+answers = ["{0,3}"]
+alternatives = ["{0,1,2}", "{0,1,2,3}"]
+
+[[2-Les_ensembles.questions]]
+question = """Soient A={0,1,2} et B={1,2}.
+Cocher la (les) bonne (s) réponse (s) """
+answers = ["(A ∪ B) ∪ N = N "]
+alternatives = ["A ∪ N = A", "(A ∪ B) ∪ N = {0,1,2}"]
+
+[[2-Les_ensembles.questions]]
+question = """Soient  E={0,1} et F={1,2}.
+Le produit cartésien de  E×F est l’ensemble """
+answers = ["{(0,1),(0,2),(1,1),(1,2)} "]
+alternatives = ["{(0,0),(0,1),(0,2),(1,0),(1,1),(1,2)}", "{∅,(0,1),(0,2),(1,0),(1,1),(1,2)}"]
+
+[[2-Les_ensembles.questions]]
+question = """Cocher la (les) bonne (s) réponse (s) """
+answers = ["3 ∈ N ", "π ∉ Q"]
+alternatives = ["−1 ∈ N", "{3} ∈ R"]
+
+[[2-Les_ensembles.questions]]
+question = """Soient  E={0,1,2,3} et  F={0,1,3} une partie de E.
+Le complémentaire de F dans E (∁ (F ; E)) est l’ensemble """
+answers = ["{2}"]
+alternatives = ["{0,1,2,3}", "{0,1,3}"]
+
+[[2-Les_ensembles.questions]]
+question = """Soient  A={−1,0,1,2} et  B={1,2}.
+Cocher la (les) bonne (s) réponse (s) """
+answers = ["(A ∪ B) ∪ Z = Z"]
+alternatives = ["A ∪ Z = A", "(A ∪ B) ∪ Z = {−1,0,1,2}"]
+
+[[2-Les_ensembles.questions]]
+question = """Soient  E={1,2} et F={1,2,3}.
+Le produit cartésien   E × F est l’ensemble """
+answers = ["{(1,1),(1,2),(1,3),(2,1),(2,2),(2,3)}"]
+alternatives = ["{(0,0),(0,1),(0,2),(1,0),(1,1)(1,2)}", "{∅,(0,1),(0,2),(1,0),(1,1),(1,2)}"]
+
+
+#_______________________________________________________________________________________________________________________________
+
+[3-Les_fonctions]
+label = "3-Les fonction"
+
+[[3-Les_fonctions.questions]]
+question = """Une classe de l'EPITA est composée de 40 étudiants. On a compté que dans cette classe : 
+Tous les étudiants parlent au moins une des deux langues, anglais ou espagnol.
+35 d'entre eux parlent l'anglais.
+20 d'entre eux parlent l'espagnol.
+Combien d'étudiants parlent à la fois l'anglais et l'espagnol ? """
+answers = ["15"]
+alternatives = ["55", "40", "45"]
+
+#_______________________________________________________________________________________________________________________________
+
+[4-Denombrement]
+label = "4-Denombrement"
+
+[[4-Denombrement.questions]]
+question = """Une classe de l'EPITA est composée de 40 étudiants. On a compté que dans cette classe : 
+Tous les étudiants parlent au moins une des deux langues, anglais ou espagnol.
+35 d'entre eux parlent l'anglais.
+20 d'entre eux parlent l'espagnol.
+Combien d'étudiants parlent à la fois l'anglais et l'espagnol ? """
+answers = ["15"]
+alternatives = ["55", "40", "45"]
+
+[[4-Denombrement.questions]]
+question = """Une urne contient 10 boules numérotées de 1 à 10. 
+On tire 3 boules successivement et sans remises.
+Le nombre de résultats possibles est :"""
+answers = ["720"]
+alternatives = ["120", "1000", "132"]
+
+[[4-Denombrement.questions]]
+question = """Une urne contient 10 boules numérotées de 1 à 10. 
+On tire 3 boules successivement avec remises.
+Le nombre de résultats possibles est :"""
+answers = ["1000"]
+alternatives = ["120", "720", "132"]
+
+[[4-Denombrement.questions]]
+question = """Une urne contient 10 boules numérotées de 1 à 10.
+On tire 3 boules simultanément.
+Le nombre de résultats possibles est :"""
+answers = ["120"]
+alternatives = ["1000", "720", "132"]
+
+[[4-Denombrement.questions]]
+question = """Quel est le nombre d'anagrammes du mot math :"""
+answers = ["24"]
+alternatives = ["16","10","120"]
+
+[[4-Denombrement.questions]]
+question = """Quel est le nombre d'anagrammes du mot genial :"""
+answers = ["720"]
+alternatives = ["120", "1000", "72"]
+
+[[4-Denombrement.questions]]
+question = """Quel est le nombre d'anagrammes du mot assez :"""
+answers = ["60"]
+alternatives = ["120", "1000", "720", "30"]
+
+[[4-Denombrement.questions]]
+question = """Pour tout x∈R, (x−2)^5 est égal à : """
+answers = ["x^5 − 10x^4 + 40x^3 − 80x^2 + 80x − 32"]
+alternatives = ["x^5 + 10x^4 + 40x^3 + 80x^2 + 80x + 32", "x^5 − 10x^4 + 40x^3 − 40x^2 + 10x−32","x^5 − 5x^4 + 10x^3 − 10x^2 + 5x − 32"]
+
+[[4-Denombrement.questions]]
+question = """Une équipe de handball a un effectif de 13 joueurs (hors gardiens de but). Parmi ceux-ci :
+10 peuvent dribler de la main droite.
+6 peuvent dribler de la main gauche.
+Combien d'entre eux peuvent dribler des deux mains ?"""
+answers = ["3"]
+alternatives = ["16", "4", "13"]
+
+[[4-Denombrement.questions]]
+question = "Quel le nombre d'anagrammes du mot bleu : "
+answers = ["24"]
+alternatives = ["120","60","720"]
+
+[[4-Denombrement.questions]]
+question = "Quel le nombre d'anagrammes du mot bleus : "
+answers = ["120"]
+alternatives = ["24","60","720"]
+
+[[4-Denombrement.questions]]
+question = "Quel le nombre d'anagrammes du mot bleue : "
+answers = ["60"]
+alternatives = ["120","24","720"]
+
+[[4-Denombrement.questions]]
+question = "De quoi dépend un Arrangement : "
+answers = ["Ordre"]
+alternatives = ["Répétition","Ordre si tout pris","Aucun"]
+
+[[4-Denombrement.questions]]
+question = "De quoi dépend une Permutation : "
+answers = ["Ordre si tout pris"]
+alternatives = ["Répétition", "ordre", "Aucun"]
+
+[[4-Denombrement.questions]]
+question = "De quoi dépend une Combinaison : "
+answers = ["Aucun"]
+alternatives = ["Répétition", "ordre", "Ordre si tout pris"]
+
+[[4-Denombrement.questions]]
+question = "De quoi dépend une Combinaison avec répétition : "
+answers = ["Répétition"]
+alternatives = ["Aucun", "ordre", "Ordre si tout pris"]
+
+[[4-Denombrement.questions]]
+question = "De quoi dépend un Arrangement avec répétition : "
+answers = ["Répétition","ordre"]
+alternatives = ["Aucun", "Ordre si tout pris"]
+
+#Attention les formules ne sont pas a la verticale mais a l'horizontale
+
+[[4-Denombrement.questions]]
+question = "Quelle est la formule de (n ; k) : "
+answers = ["n! / k!(n-k)!"]
+alternatives = ["n! / (n-k)!", "n! / k!"]
+
+[[4-Denombrement.questions]]
+question = "Quelle est la formule de la Permutation : "
+answers = ["n!"]
+alternatives = ["n^k", "(n ; k)", "n! / (n-k)!", "(n+k-1 ; n)"]
+
+[[4-Denombrement.questions]]
+question = "Quelle est la formule de l'Arrangement : "
+answers = ["n! / (n-k)!"]
+alternatives = ["n^k", "(n ; k)", "n!", "(n+k-1 ; n)"]
+
+[[4-Denombrement.questions]]
+question = "Quelle est la formule de l'Arrangement avec répétition : "
+answers = ["n^k"]
+alternatives = ["n!", "(n ; k)", "n! / (n-k)!", "(n+k-1 ; n)"]
+
+[[4-Denombrement.questions]]
+question = "Quelle est la formule de la Combinaison : "
+answers = ["(n ; k)"]
+alternatives = ["n^k", "n!", "n! / (n-k)!", "(n+k-1 ; n)"]
+
+[[4-Denombrement.questions]]
+question = "Quelle est la formule de la Permutation : "
+answers = ["(n+k-1 ; n)"]
+alternatives = ["n^k", "(n ; k)", "n! / (n-k)!", "n!"]
+
+#_______________________________________________________________________________________________________________________________
+
+[5-Espaces_probabilises]
+label = "5-Espaces probabilisés"
+
+[[5-Espaces_probabilises.questions]]
+question = """On lance un dé à 6 faces. L'ensemble Ω des résultats possibles est alors
+Ω=[[1,6]]
+On peut definir un espace probabilisé (Ω,P(Ω),P) en posant : """
+answers = ["P({1})=0.3 et, pour tout k∈[[2,6]], P({k})=0.7/5",
+"P({1})=P({2})=0.3 et, pour tout k∈[[3,6]], P({k})=0.1"]
+alternatives = ["P({1})=0.3 et, pour tout k∈[[2,6]], P({k})=0.1"]
+
+[[5-Espaces_probabilises.questions]]
+question = """On tire un nombre entier entre 1 et 100, les résultats étant équiprobables.
+Soient A, B et C les évènements :
+A=«le nombre tiré est un multiple de 2»
+B=le nombre tiré est un multiple de 5»
+C=le nombre tiré est un multiple de 10» """
+answers = ["P(A)=0.5","P(B)=0.2","P(C)=0.1" ]
+alternatives = ["P(A∪B)=0.7"]
+
+[[5-Espaces_probabilises.questions]]
+question = """On lance deux dés équilibrés.
+Quelle est la probabilité d'obtenir au moins un 6 ?"""
+answers = ["11/36" ]
+alternatives = ["10/36", "12/36", "5/18"]
+
+[[5-Espaces_probabilises.questions]]
+question = """On lance deux dés équilibrés.
+Quelle est la probabilité d'obtenir exactement un 6 ?"""
+answers = ["5/18" ]
+alternatives = ["10/36", "12/36", "11/36"]
+
+[[5-Espaces_probabilises.questions]]
+question = """Un antiquaire possède un lot de 8 pendules anciennes. Seules 3 d'entre elles sont en état de marche.
+Un client en achète 2, qu'il choisit au hasard parmi les 8.
+La probabilité que les deux pendules achetées fonctionnent vaut :"""
+answers = ["3/28" ]
+alternatives = ["5/14", "5/18", "15/28"]
+
+[[5-Espaces_probabilises.questions]]
+question = """Un antiquaire possède un lot de 8 pendules anciennes. Seules 3 d'entre elles sont en état de marche.
+Un client en achète 2, qu'il choisit au hasard parmi les 8.
+La probabilité qu'une seule des deux pendules fonctionne vaut :"""
+answers = ["15/28" ]
+alternatives = ["5/14", "5/18", "3/28"]
+
+[[5-Espaces_probabilises.questions]]
+question = """Un antiquaire possède un lot de 8 pendules anciennes. Seules 3 d'entre elles sont en état de marche.
+Un client en achète 2, qu'il choisit au hasard parmi les 8.
+La probabilité qu'aucune des deux pendules ne fonctionne vaut :"""
+answers = ["5/14" ]
+alternatives = ["15/28", "5/18", "3/28"]
+
+[[5-Espaces_probabilises.questions]]
+question = """Soient (Ω,P(Ω),P) un espace probabilisé fini et A un évènement.
+Alors:"""
+answers = ["P(∅)=0","A est un sous-ensemble de Ω"]
+alternatives = ["Si les évènements élémentaires sont équiprobables, alors P(A)=Card(A)/Card(Ω)",
+"P(A)=Card(A)/Card(Ω)"]
+
+[[5-Espaces_probabilises.questions]]
+question = """Soient (Ω,P(Ω),P) un espace probabilisé fini, et A et B deux évènements.
+Alors :"""
+answers = ["P(A∪B)=P(A)+P(B)−P(A∩B)","Si A et B sont disjoints, P(A⊔B)=P(A)+P(B)"]
+alternatives = ["P(A∩B)=P(A)+P(B)","P(A∪B)=P(A)+P(B)"]
+
+[[5-Espaces_probabilises.questions]]
+question = """Soit N∈N∗. On tire un nombre au hasard entre 1 et N, les résultats possibles étant équiprobables.
+Alors :"""
+answers = ["Si N=300, la probabilité que le résultat soit un multiple de 3 est 1/3"]
+alternatives = ["Si N=100, la probabilité que le résultat soit un multiple de 3 est 1/3",
+"Aucune de ces deux réponses"]
+
+[[5-Espaces_probabilises.questions]]
+question = """On tire un nombre entre 1 et 100, les résultats étant équiprobables.
+Soient A, B et C les évènements
+A=«le résultat est un multiple de 5»
+B=«le résultat est un multiple de 4»
+C=«le résultat est un multiple de 20»
+Alors:"""
+answers = ["P(A∪B)=0.4","P(A∩B)=P(C)", "P(A)=0.2", "P(B)=0.25" ]
+alternatives = ["Aucune des propriétés n'est vraie", "P(A∪B)=0.45"]
+
+[[5-Espaces_probabilises.questions]]
+question = """On tire un nombre entre 1 et 10. La fonction P est définie par:
+∀n∈{1,…,10}, P({n})=n55
+Alors:"""
+answers = ["On définit ainsi une fonction de probabilité sur P(Ω)." ]
+alternatives = ["Aucune des propriétés n'est vraie", "La probabilité que le résultat soit pair est 5/11",
+"La probabilité que le résultat soit inférieur ou égal à 5 est 12"]
+
+[[5-Espaces_probabilises.questions]]
+question = """On lance deux dés indiscernables.
+Alors:"""
+answers = ["La probabilité d'obtenir un double 6 est 1/36" ]
+alternatives = ["Aucune des propriétés n'est vraie", "La probabilité d'obtenir un 6 et un 2 est 1/36",
+"La probabilité d'obtenir au moins un 6 est 1/6", "La probabilité d'obtenir exactement un 6 est 1/6"]
+
+[[5-Espaces_probabilises.questions]]
+question = """Une équipe de 10 ingénieurs prévoit de se retrouver à dîner pour célébrer la réussite d'un projet.
+6 d'entre eux sont partisans d'aller dans un pizzeria;
+les 4 autres préfèreraient un restaurant de sushis.
+On tire 3 membres de l'équipe au hasard.
+Alors:"""
+answers = ["La probabilité que 2 d'entre elles soutiennent l'option pizzeria et 1 d'entre elles l'option sushis est 1/2" ]
+alternatives = ["Aucune des propriétés n'est vraie", "La probabilité que ces 3 personnes soutiennent l'option pizzeria est 1/6",
+"La probabilité que ces 3 personnes soutiennent l'option sushis est (2/5)^3"]
+
+[[5-Espaces_probabilises.questions]]
+question = """Dans un jeu de 32 cartes, on tire une main de 4 cartes.
+Alors:"""
+answers = ["La probabilité d'avoir un carré est 1/4495" ]
+alternatives = ["Aucune des propriétés n'est vraie", "La probabilité d'avoir 4 cartes de la même couleur est 1/4",
+"La probabilité d'avoir 4 cartes de la même couleur est 5/899","La probabilité d'avoir un carré est 1/8"]
+
+#_______________________________________________________________________________________________________________________________
+
+[6-Probabilites_conditionnelles]
+label = "6-Probabilités conditionnelles"
+
+[[6-Probabilites_conditionnelles.questions]]
+question = """Soient A et B deux évènements de probabilités non nulles.
+Alors"""
+answers = ["P(A ∩ B) = P(A|B)P(B)", "P(A ∩ B) = P(B|A)P(A)", "P(A|B)=(P(A ∩ B)) / (P(B))" ]
+alternatives = ["P(A|B)= (P(A ∩ B)) / (P(A))"]
+
+[[6-Probabilites_conditionnelles.questions]]
+question = """On lance un dè à 6 faces. Soient A et B les deux évènements
+A=«le résultat est pair»
+B=«le résultat est un multiple de 4»
+Alors A et B sont indépendants.
+Veuillez choisir une réponse."""
+answers = ["Faux" ]
+alternatives = ["Vrai"]
+
+[[6-Probabilites_conditionnelles.questions]]
+question = """Une école d'ingénieurs a développé des cours en ligne. Les étudiants doivent étudier trois MiMos cette semaine. On suppose que :
+
+80% des étudiants sont concentrés devant les vidéos 
+Parmi les étudiants qui sont concentrés devant les vidéos, 50% font les quizz et exercices soigneusement
+
+90% des étudiants qui sont concentrés devant les vidéos et qui font leurs quizz et exercices soigneusement auront la moyenne au prochain contrôle.
+On tire un étudiant au hasard et on cherche la probabilité p que cet étudiant soit concentré devant les vidéos, fasse les quizz et exercices soigneusement et ait la moyenne au contrôle.
+
+Donner la valeur de p:"""
+answers = ["O,36" ]
+alternatives = ["0,35", "0,30"]
+
+[[6-Probabilites_conditionnelles.questions]]
+question = """Soient A et B deux évènements de probabilités non nulles.
+La formule de Bayes énonce que"""
+answers = ["P(A|B) = (P(B|A)P(A)) / (P(B))" ]
+alternatives = ["P(A|B) = (P(B|A)P(B)) / (P(A))", "P(A|B) = P(B|A)P(A)", "P(A|B) = P(B|A) / P(B)"]
+
+[[6-Probabilites_conditionnelles.questions]]
+question = """Soient (B1,B2,B3) un système complet d'évènements, c'est-à-dire que cette famille forme une partition de Ω.
+On suppose de plus qu'aucun de ces évènements n'est de probabilité nulle.
+Enfin, on considère un évènement A de probabilité non nulle.
+Alors"""
+answers = ["P(A) = P(A|B1) P(B1) + P(A|B2) P(B2) + P(A|B3) P(B3) ", "P(B2|A) = (P(A|B2)P(B2)) / (P(A|B1) P(B1) + P(A|B2) P(B2) + P(A|B3) P(B3))" ]
+alternatives = ["P(B2) = P(B1|A) P(A) + P(B2|A) P(A) + P(B3|A) P(A)", "P(A|B2) = (P(B2|A)P(A)) / (P(B1|A) P(A) + P(B2|A) P(A) + P(B3|A) P(A))"]
+
+[[6-Probabilites_conditionnelles.questions]]
+question = """Dans un établissement financier, une équipe est chargée des investissements dans les entreprises du secteur de l'énergie. 
+Elle doit donc réagir très rapidement à toute information concernant ce secteur d'activité.
+Pour l'aider dans cette tâche, le service informatique a conçu une application qui interprète en temps réel toutes les dépêches émises par les agences de presse (AFP, Reuter, ...) 
+et qui sélectionne automatiquement celles qui traitent du secteur de l'énergie.
+On suppose que 0.1% des dépêches émises traitent de ce secteur d'activité.
+Les performances de l'application ont été évaluées ainsi :
+une proportion X=99% des dépêches qui traitent du secteur de l'énergie sont bien sélectionnées;
+une proportion Y=98% des dépêches qui ne traitent pas du secteur de l'énergie sont bien rejetées.
+On se pose les question suivantes:
+Une dépêche est sélectionnée. Quelle est la probabilité p qu'elle traite du secteur de l'énergie?"""
+answers = ["99 / 2097"]
+alternatives = ["100 / 2098", "1", "((0.8 0.11111-0.00011)/(0.8 0.111))"]
+
+[[6-Probabilites_conditionnelles.questions]]
+question = """Dans un établissement financier, une équipe est chargée des investissements dans les entreprises du secteur de l'énergie. 
+Elle doit donc réagir très rapidement à toute information concernant ce secteur d'activité.
+Pour l'aider dans cette tâche, le service informatique a conçu une application qui interprète en temps réel toutes les dépêches émises par les agences de presse (AFP, Reuter, ...) 
+et qui sélectionne automatiquement celles qui traitent du secteur de l'énergie.
+On suppose que 0.1% des dépêches émises traitent de ce secteur d'activité.
+Les performances de l'application ont été évaluées ainsi :
+une proportion X=99% des dépêches qui traitent du secteur de l'énergie sont bien sélectionnées;
+une proportion Y=98% des dépêches qui ne traitent pas du secteur de l'énergie sont bien rejetées.
+On se pose les question suivantes:
+Supposons que les ingénieurs parviennent à donner à X la valeur 100%. Que vaudrait alors p?"""
+answers = ["100 / 2098"]
+alternatives = ["99 / 2097", "1", "((0.8 0.11111-0.00011)/(0.8 0.111))"]
+
+[[6-Probabilites_conditionnelles.questions]]
+question = """Dans un établissement financier, une équipe est chargée des investissements dans les entreprises du secteur de l'énergie. 
+Elle doit donc réagir très rapidement à toute information concernant ce secteur d'activité.
+Pour l'aider dans cette tâche, le service informatique a conçu une application qui interprète en temps réel toutes les dépêches émises par les agences de presse (AFP, Reuter, ...) 
+et qui sélectionne automatiquement celles qui traitent du secteur de l'énergie.
+On suppose que 0.1% des dépêches émises traitent de ce secteur d'activité.
+Les performances de l'application ont été évaluées ainsi :
+une proportion X=99% des dépêches qui traitent du secteur de l'énergie sont bien sélectionnées;
+une proportion Y=98% des dépêches qui ne traitent pas du secteur de l'énergie sont bien rejetées.
+On se pose les question suivantes:
+Redonnons à X sa valeur initiale X=99% et supposons que les ingénieurs parviennent à ce que Y=100%. Quelle serait la valeur de p?"""
+answers = ["1"]
+alternatives = ["99 / 2097", "100 / 2098", "((0.8 0.11111-0.00011)/(0.8 0.111))"]
+
+[[6-Probabilites_conditionnelles.questions]]
+question = """Dans un établissement financier, une équipe est chargée des investissements dans les entreprises du secteur de l'énergie. 
+Elle doit donc réagir très rapidement à toute information concernant ce secteur d'activité.
+Pour l'aider dans cette tâche, le service informatique a conçu une application qui interprète en temps réel toutes les dépêches émises par les agences de presse (AFP, Reuter, ...) 
+et qui sélectionne automatiquement celles qui traitent du secteur de l'énergie.
+On suppose que 0.1% des dépêches émises traitent de ce secteur d'activité.
+Les performances de l'application ont été évaluées ainsi :
+une proportion X=99% des dépêches qui traitent du secteur de l'énergie sont bien sélectionnées;
+une proportion Y=98% des dépêches qui ne traitent pas du secteur de l'énergie sont bien rejetées.
+On se pose les question suivantes:
+Pour quelle valeur minimum de Y aurait-on p⩾80% ?"""
+answers = ["((0.8 0.11111-0.00011)/(0.8 0.111))"]
+alternatives = ["99 / 2097", "100 / 2098", "1"]
+
+[[6-Probabilites_conditionnelles.questions]]
+question = """Soient A et B deux événements de probabilités non nulles.
+La probabilité conditionnelle de B sachant A est"""
+answers = ["(P(A ∩ B)) / (P(A))"]
+alternatives = ["(P(A ∩ B)) / (P(B))", "(P(A ∩ B)) / (P(B))", "(P(A ∩ B)) / (P(B))", "(P(A ∪ B)) / (P(A))"]
+
+[[6-Probabilites_conditionnelles.questions]]
+question = """Soient A et B deux événements de probabilités non nulles.
+Alors"""
+answers = ["P(A ∩ B) = P(B | A) P(A)", "P(A ∩ B) = P(A | B) P(B)"]
+alternatives = ["P(A ∩ B) = P(A | B) P(A)", "P(A ∩ B) = P(B | A) P(B)", "P(A ∩ B) = P(A) P(B)"]
+
+[[6-Probabilites_conditionnelles.questions]]
+question = """Soient A et B deux événements indépendants de probabilités non nulles.
+Alors"""
+answers = ["P(A ∩ B) = P(A) P(B)", "P(A) = P(A | B)", "P(B) = P(B | A)"]
+alternatives = ["P(A ∪ B) = P(A) + P(B)"]
+
+[[6-Probabilites_conditionnelles.questions]]
+question = """Soient A, B et C trois événements de probabilités non nulles.
+Alors """
+answers = ["P(A ∩ B ∩ C) = P(A | (B ∩ C)) P(B | C) P(C)", "P(A ∩ B ∩ C) = P(C |(A ∩ B)) P(B | A) P(A)", "P(A ∩ B ∩ C) = P(C | (A ∩ B)) P(A|B) P(B)", "P(A ∩ B ∩ C) = P(B | (A ∩ C)) P(A | C) P(C)"]
+alternatives = [""]
+
+[[6-Probabilites_conditionnelles.questions]]
+question = """On lance un dé et on considère les événements:
+A=«le résultat est un multiple de 2»
+B=«le résultat est un multiple de 3»
+Alors ces événements sont indépendants. """
+answers = ["Vrai"]
+alternatives = ["Faux"]
+
+[[6-Probabilites_conditionnelles.questions]]
+question = """Une fabriquant d'ordinateurs achète ses processeurs chez trois fournisseurs: F1(pour 25% de ses processeurs), F2 (pour 50%) et F3 (pour 25%).
+Les observations ont montré que :
+1% des processeurs achetés à F1 sont défectueux ;
+0.5% des processeurs achetés à F2 sont défectueux ;
+0.8% des processeurs achetés à F3 sont défectueux.
+On tire un processeur au hasard. Que vaut la probabilité qu'il soit défectueux ? (en %) """
+answers = ["0,7"]
+alternatives = ["0,13", "0,4", "75", "2,2"]
+
+[[6-Probabilites_conditionnelles.questions]]
+question = """La polyarthrite rhumatoïde est une maladie auto-immune qui occasionne des douleurs et des inflammations dans les articulations. Elle concerne 1% de la population mondiale.
+Une mutation génétique dans le chromosome 6 (HLA) semble liée à cette maladie :
+(3/4) des individus qui souffrent de la maladie ont cette mutation;
+seulement (1/3) de ceux qui ne souffrent pas de la maladie ont cette mutation.
+Une personne fait un test génétique pour évaluer son risque et elle apprend qu'elle a la mutation.
+Quelle est la probabilité qu'elle souffre de cette maladie? (en %) """
+answers = ["2,2"]
+alternatives = ["0,13", "0,4", "75"]
+
+#_______________________________________________________________________________________________________________________________
+
+[7-Variables_aleatoire]
+label = "7-Variables Aléatoire"
+
+[[7-Variables_aleatoire.questions]]
+question = """On lance deux dés équilibrés et on définit la variable aléatoire X comme la somme de leurs résultats.
+Alors :"""
+answers = ["P(X=3) = 1 / 18" ]
+alternatives = ["X(Ω)=[[1,12]]", "X(Ω) = [[1,12]]", "X(Ω) = [[0,12]]"]
+
+[[7-Variables_aleatoire.questions]]
+question = """Un brocanteur a récupéré quatre montres. Parmi celles-ci, deux sont anciennes, ce qui leur donne une valeur de 50
+euros comme antiquité. De plus, deux montres sont en état de marche (une ancienne et une récente), ce qui leur donne une valeur de 50
+euros.
+Les valeurs dues à chacune de ces qualités se cumulent, c'est-à-dire que la montre qui est à la fois ancienne et en état de marche vaut 100
+euros. Celle qui n'a aucune de ces qualités ne vaut rien.
+Le brocanteur vous offre deux montres à tirer au hasard parmi ces quatre. On définit la variable aléatoire X
+comme la valeur totale du lot de deux montres que vous acquérez.
+
+Cette variable prend des valeurs entières multiples de 50 dans [[a,b]]. Que vaut a ?
+a ="""
+answers = ["50" ]
+alternatives = ["100", "150", "6"]
+
+[[7-Variables_aleatoire.questions]]
+question = """Un brocanteur a récupéré quatre montres. Parmi celles-ci, deux sont anciennes, ce qui leur donne une valeur de 50
+euros comme antiquité. De plus, deux montres sont en état de marche (une ancienne et une récente), ce qui leur donne une valeur de 50
+euros.
+Les valeurs dues à chacune de ces qualités se cumulent, c'est-à-dire que la montre qui est à la fois ancienne et en état de marche vaut 100
+euros. Celle qui n'a aucune de ces qualités ne vaut rien.
+Le brocanteur vous offre deux montres à tirer au hasard parmi ces quatre. On définit la variable aléatoire X
+comme la valeur totale du lot de deux montres que vous acquérez.
+
+Cette variable prend des valeurs entières multiples de 50 dans [[a,b]]. Que vaut b?
+b ="""
+answers = ["150" ]
+alternatives = ["100", "50", "6"]
+
+[[7-Variables_aleatoire.questions]]
+question = """Un brocanteur a récupéré quatre montres. Parmi celles-ci, deux sont anciennes, ce qui leur donne une valeur de 50
+euros comme antiquité. De plus, deux montres sont en état de marche (une ancienne et une récente), ce qui leur donne une valeur de 50
+euros.
+Les valeurs dues à chacune de ces qualités se cumulent, c'est-à-dire que la montre qui est à la fois ancienne et en état de marche vaut 100
+euros. Celle qui n'a aucune de ces qualités ne vaut rien.
+Le brocanteur vous offre deux montres à tirer au hasard parmi ces quatre. On définit la variable aléatoire X
+comme la valeur totale du lot de deux montres que vous acquérez.
+
+Quelle est la probabilité que X vaille 150?
+P(X=150)="""
+answers = ["1 / 3" ]
+alternatives = ["100", "50", "6"]
+
+[[7-Variables_aleatoire.questions]]
+question = """Un langage de programmation dispose d'une fonction aléatoire : si Z et n sont des variables de types entiers, la ligne de code
+Z = rand(n);affecte à Z un nombre dans [[0,n]]qui est tiré aléatoirement pendant l'exécution du programme.
+La distribution est uniforme, c'est-à-dire que chaque valeur de [[0,n]] a la même probabilité.
+Dans un projet de programmation, vous devez affecter à une variable entière X un nombre tiré aléatoirement entre 13 et 37, de façon uniforme.
+Ecrivez la ligne de code qui fait cette affectation:"""
+answers = ["X = 13 + rand(24)" ]
+alternatives = ["X = 13 + rand(37)", "X = 24 + rand(13)"]
+
+[[7-Variables_aleatoire.questions]]
+question = """Soit X une variable aléatoire telle que X(Ω)={−1,0.5,1}.
+Quelles expressions donnent E(X^2) ?"""
+answers = ["E(X^2) = P(X = −1) × (−1)^2 + P(X = 0.5) × (0.5)^2 + P(X = 1) × (1)^2", "E(X^2) = P(X^2 = 1) × 1 + P(X^2 = 0.25) × 0.25" ]
+alternatives = ["Aucune de ces expressions n'est juste", "E(X^2) = P(X^2 = (−1)^2) × (−1)^2 + P(X^2 = (0.5)^2) × 0.25 + P(X^2 = 12) × 12"]
+
+
+
+#_______________________________________________________________________________________________________________________________
+
+[8-Division_euclidienne_et_pgcd]
+label = "8-Division euclidienne et pgcd"
+
+[[8-Division_euclidienne_et_pgcd.questions]]
+question = """Le reste de la division euclidienne de −12 par 5 est"""
+answers = ["3" ]
+alternatives = ["-2", "1", "0"]
+
+[[8-Division_euclidienne_et_pgcd.questions]]
+question = """On donne l'égalité : −358 = 21 × (−18) + 20"""
+answers = ["Le quotient de la division euclidienne de −358 par 21 est −18", "Le reste de la division euclidienne de −358 par 21 est 20 "]
+alternatives = ["Le quotient de la division euclidienne de −358 par −18 est 21", "Le reste de la division euclidienne de −358 par −18 est 20"]
+
+[[8-Division_euclidienne_et_pgcd.questions]]
+question = """Le PGCD de 230 et 126 est"""
+answers = ["2"]
+alternatives = ["4", "5", "1"]
+
+[[8-Division_euclidienne_et_pgcd.questions]]
+question = """Pour tout (a,b) ∈ N∗^2, on note a ∧ b le pgcd de a et b.
+Question 1 :
+Soit a ∈ Z∗ quelconque.
+Alors"""
+answers = ["−1 ∣ a", "a ∣ 0"]
+alternatives = ["Rien de ce qui précède", "a ∣ −1", "0 ∣ a"]
+
+[[8-Division_euclidienne_et_pgcd.questions]]
+question = """Pour tout (a,b)∈N∗2, on note a∧b le pgcd de a et b.
+Question 2 :
+Le reste de la division euclidienne de −15 par 2 est"""
+answers = ["−1 ∣ a", "a ∣ 0"]
+alternatives = ["Rien de ce qui précède", "a ∣ −1", "0 ∣ a"]
+
+
+#_______________________________________________________________________________________________________________________________
+
+[9-Congruences]
+label = "9-Congruences"
+
+[[9-Congruences.questions]]
+question = """Soit  n ∈ Z. Si  n ≡ 0[5], alors"""
+answers = ["5 divise n", "n^2 ≡ 0[5]" ]
+alternatives = ["n^2 ≡ 1[5]"]
+
+[[9-Congruences.questions]]
+question = """Cochez la(les) bonne(s) réponse(s)"""
+answers = ["180^3 ≡ 0[16]", "2^8 ≡ 0[8]", "33 + 49 ≡ 2[4]" ]
+alternatives = ["15 ≡ −2[13]"]
+
+[[9-Congruences.questions]]
+question = """Cochez la(les) bonne(s) réponse(s)"""
+answers = ["13 ≡ −2[3]", "89 ≡ 8[9]", "23 ≡ 2[7]" ]
+alternatives = ["17×98 ≡ 2[5]"]
+
+[[9-Congruences.questions]]
+question = """Pour chaque proposition, cocher la bonne ou la mauvaise réponse :
+79 ≡ 2[11] """
+answers = ["Vrai" ]
+alternatives = ["Faux"]
+
+[[9-Congruences.questions]]
+question = """Pour chaque proposition, cocher la bonne ou la mauvaise réponse :
+87 ≡ 1[11] """
+answers = ["Faux"]
+alternatives = ["Vrai"]
+
+[[9-Congruences.questions]]
+question = """Pour chaque proposition, cocher la bonne ou la mauvaise réponse :
+(79+87) ≡ 1[11] """
+answers = ["Vrai"]
+alternatives = ["Faux"]
+
+[[9-Congruences.questions]]
+question = """Pour chaque proposition, cocher la bonne ou la mauvaise réponse :
+79×87 ≡ 8[11] """
+answers = ["Faux"]
+alternatives = ["Vrai"]
+
+[[9-Congruences.questions]]
+question = """Soient n ∈ N∗ et (a,b) ∈ Z^2 tels que a≡b[n]. 
+Alors """
+answers = ["n ∣ a − b", "il existe k ∈ Z tel que a = b + kn", "a et b ont même reste dans la division euclidienne par n"]
+alternatives = ["rien de ce qui précède"]
+
+[[9-Congruences.questions]]
+question = """Soient (n,m) ∈ N∗^2 quelconque, (x,y,x′,y′) ∈ N^4 quelconque. 
+Alors """
+answers = ["x ≡ y[n] et x′ ≡ y′[n] ⟹ x + x′ ≡ y + y′[n]", "x ≡ x′[n] ⟹ x^m ≡ (x′)^m [n]", "x ≡ y[n] et x′ ≡ y′[n] ⟹ xx′ ≡ yy′[n]"]
+alternatives = ["rien de ce qui précède", "xx′ ≡ 0[n] ⟹ x ≡ 0[n] ou x′ ≡ 0[n]"]
+
+#_______________________________________________________________________________________________________________________________
+
+[10-Nombres_complex]
+label = "10-Nombres complex"
+
+[[10-Nombres_complex.questions]]
+question = """Dans un jeu de 32 cartes, on tire une main de 4 cartes.
+Alors:"""
+answers = ["La probabilité d'avoir un carré est 1/4495" ]
+alternatives = ["Aucune des propriétés n'est vraie", "La probabilité d'avoir 4 cartes de la même couleur est 1/4",
+"La probabilité d'avoir 4 cartes de la même couleur est 5/899","La probabilité d'avoir un carré est 1/8"]
